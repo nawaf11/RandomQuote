@@ -25,9 +25,10 @@ object NetworkModule {
 
     @Singleton
     @Provides
-    fun provideRetrofit(moshiConverterFactory: MoshiConverterFactory): Retrofit {
+    fun provideRetrofit(okHttpClient: OkHttpClient, moshiConverterFactory: MoshiConverterFactory): Retrofit {
         return Retrofit.Builder()
             .baseUrl(QuoteService.BASE_URL)
+            .client(okHttpClient)
             .addConverterFactory(moshiConverterFactory)
             .build()
     }

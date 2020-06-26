@@ -2,9 +2,6 @@ package com.nawaf.example.randomquote.data
 
 import android.content.Context
 import com.nawaf.example.randomquote.R
-import retrofit2.HttpException
-import java.io.IOException
-import java.net.SocketTimeoutException
 
 
 sealed class DataResult<out T : Any> {

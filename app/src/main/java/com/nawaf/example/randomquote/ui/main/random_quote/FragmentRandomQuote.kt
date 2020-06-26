@@ -17,7 +17,7 @@ class FragmentRandomQuote : Fragment() {
 
     lateinit var binding: RandomQuoteFragmentBinding
 
-    val viewModel by viewModels<RandomQuoteViewModel>()
+    private val viewModel by viewModels<RandomQuoteViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -43,6 +43,16 @@ class FragmentRandomQuote : Fragment() {
         viewModel.quote.observe(viewLifecycleOwner,
             Observer { quote ->
                 quote?.let { showQuote(it) }
+            })
+
+        viewModel.isLoading.observe(viewLifecycleOwner,
+            Observer { isLoading ->
+                val isEnabled = ! isLoading
+                binding.refreshQuote.isEnabled = isEnabled
+                if (isEnabled)
+                    binding.refreshQuote.alpha = 1f
+                else
+                    binding.refreshQuote.alpha = 0.5f
             })
 
     }

@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
  * */
 
 fun Activity.toast(msg : String) {
-    Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
+    Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
 }
 
 fun Fragment.toast(msg : String) {

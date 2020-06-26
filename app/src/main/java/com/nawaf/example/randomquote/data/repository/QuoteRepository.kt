@@ -12,13 +12,17 @@ import com.nawaf.example.randomquote.data.remote.SafeApiCall
 class QuoteRepository constructor(private val appService: QuoteService, private val quoteDao: QuoteDao) {
 
     /**
-     * This will delete all items, then insert this quote (Since in current requirement we need a single quote only)
+     * This will delete all items, then insert this quote
+     * Since in current requirement we need only a single quote.
      */
     private suspend fun makeThisOnlyItemInTheTable(quote: Quote) {
         quoteDao.deleteAll()
         quoteDao.insert(quote)
     }
 
+    /**
+     * This will load a random quote, then cache it in the local Database.
+     */
     suspend fun loadRandomQuote(): DataResult<Quote> {
         val result = SafeApiCall.start { appService.randomQuote() }
 
