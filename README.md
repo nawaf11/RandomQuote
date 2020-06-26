@@ -2,7 +2,7 @@
 
 Simple app have single page to load random quote,
 
-<img src="/previews/screenshot.png"/>
+<img src="/screenshot.png"/>
 
 Download Apk
 [Link](https://github.com/nawaf11/RandomQuote/releases).
