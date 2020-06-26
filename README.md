@@ -4,10 +4,6 @@ Simple app have single page to load random quote,
 
 <img src="/screenshot2.png"/>
 
-Download Apk
-[Link](https://github.com/nawaf11/RandomQuote/raw/master/RandomQuote.apk).
-
-
 In the app. I used:
   - Kotlin based + Coroutines for asynchronous.
   - MVVM Architucture: Lifecycle, ViewModel, LiveData
