@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RandomQuote</string>
+
+    <string name="network_error">حدث خطأ أثناء الاتصال, تحقق من الإنترنت</string>
+    <string name="cant_connect_the_server">لا يمكن الاتصال بالخادم , تحقق من الإنترنت</string>
+    <string name="error_while_connection">حدث خطأ أثناء الاتصال</string>
+    <string name="server_response_error">خطأ من الخادم</string>
+    <string name="unknown_error">خطأ غير معروف</string>
+
+</resources>
