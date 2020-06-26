@@ -11,5 +11,11 @@ In the app. I used:
   - Room Persistence: to create/manage the database.
   - Navigation component.
   - Retrofit: to call REST APIs.
+  
+  
+This app using the following api: 
+ https://programming-quotes-api.herokuapp.com
+Icons in this project are taken from:
+ https://www.flaticon.com/
 
     
